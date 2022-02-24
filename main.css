@@ -20,6 +20,15 @@ h4 {
     text-align: center;
     margin: 0;
 }
+h5{
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 a{
     color: #00b1ff;
     font-weight: bold;
@@ -77,8 +86,7 @@ body {
     box-shadow: 0 25px 35px 0 rgba(26, 72, 100, 0.2);
     border: solid 1px #dfeaf0;
     background-image: linear-gradient(to bottom, #fff, #fff 76%, #f0faff);
-    margin: auto;
-    margin-top: 51px;
+    margin: 51px auto auto;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: 50px 30px;
@@ -137,4 +145,53 @@ body {
 
 #ultimoBoton{
     margin-top: 50px;
+}
+
+#tarjetas {
+    display: grid;
+    grid-template-columns: 5fr 6fr 1fr 6fr 1fr 6fr 5fr;
+    width: 100%;
+    justify-content: center;
+    grid-template-areas: ". tarjeta1 . tarjeta2 . tarjeta3 .";
+}
+
+#tarjeta1 {
+    grid-area: tarjeta1;
+}
+
+#tarjeta2 {
+    grid-area: tarjeta2;
+    height: 100%;
+}
+
+#tarjeta3 {
+    grid-area: tarjeta3;
+    height: 100%;
+}
+
+.tarjetaProductos {
+    display: grid;
+    grid-template-rows: 5fr 1fr 1fr;
+}
+
+.tarjetaProductos > img {
+    grid-row: 1;
+}
+.tarjetaProductos > h5{
+    grid-row: 2;
+}
+.tarjetaProductos > p {
+    grid-row: 3;
+}
+#tarjetas > .tarjetaProductos {
+    box-shadow: 0 25px 35px 0 rgba(26, 72, 100, 0.2);
+    border: solid 1px #dfeaf0;
+    background-image: linear-gradient(to bottom, #fff, #fff 76%, #f0faff);
+    width: 100%;
+    height: 100%;
+}
+
+.tarjetaUnidad {
+    width: 100%;
+    height: 100%;
 }
