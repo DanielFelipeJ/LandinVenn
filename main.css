@@ -33,6 +33,14 @@ a{
     color: #00b1ff;
     font-weight: bold;
 }
+p {
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+}
 
 button {
     color: #fff;
@@ -54,7 +62,7 @@ body {
     margin: 0;
 }
 
-#segundoTitulo {
+.segundoTitulo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -149,7 +157,7 @@ body {
 
 #tarjetas {
     display: grid;
-    grid-template-columns: 5fr 6fr 1fr 6fr 1fr 6fr 5fr;
+    grid-template-columns: 6fr 7fr 1fr 7fr 1fr 7fr 6fr;
     width: 100%;
     justify-content: center;
     grid-template-areas: ". tarjeta1 . tarjeta2 . tarjeta3 .";
@@ -171,27 +179,78 @@ body {
 
 .tarjetaProductos {
     display: grid;
-    grid-template-rows: 5fr 1fr 1fr;
+    grid-template-rows: 6fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .tarjetaProductos > img {
     grid-row: 1;
 }
 .tarjetaProductos > h5{
-    grid-row: 2;
+    grid-row: 3;
 }
 .tarjetaProductos > p {
-    grid-row: 3;
+    grid-row: 5;
 }
 #tarjetas > .tarjetaProductos {
     box-shadow: 0 25px 35px 0 rgba(26, 72, 100, 0.2);
     border: solid 1px #dfeaf0;
     background-image: linear-gradient(to bottom, #fff, #fff 76%, #f0faff);
-    width: 100%;
-    height: 100%;
+    height: 50vh;
 }
 
 .tarjetaUnidad {
+    width: 90%;
+    height: 90%;
+}
+
+#button2 {
+    margin-top: 40px;
+}
+
+#terceraSeccion {
+    padding-top: 18px;
+    height: 350px;
+    max-width: 700px;
+    display: grid;
     width: 100%;
-    height: 100%;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr 2fr 2fr;
+    grid-template-areas: "title title title title title"
+                        "Cero1 . Cero2 . Cero3"
+                        "Foto1 Linea1 Foto2 Linea2 Foto3"
+                        "text1 . text2 . text3"
+                        ". . . . .";
+    margin: 51px auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#titulo3{grid-area: title;}
+#numero1 {grid-area: Cero1;}
+#numero2 {grid-area: Cero2;}
+#numero3 {grid-area: Cero3;}
+#circulo1 {grid-area: Foto1;cursor: pointer;position: relative}
+#circulo2 {grid-area: Foto2;cursor: pointer}
+#circulo3 {grid-area: Foto3;cursor: pointer}
+#text1 {
+    grid-area: text1;
+}
+#text2 {
+    grid-area: text2;
+}
+#text3 {
+    grid-area: text3;
+}
+
+#linea1 {
+    grid-area: Linea1;
+    width: 180%;
+    height: 5px;
+}
+#linea2 {
+    grid-area: Linea2;
+    width: 180%;
+    height: 5px;
 }
