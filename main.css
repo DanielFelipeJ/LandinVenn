@@ -130,7 +130,7 @@ body {
 .cuadricula{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     gap: 20px;
 }
@@ -207,6 +207,12 @@ body {
 
 #button2 {
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#button3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #terceraSeccion {
@@ -253,4 +259,31 @@ body {
     grid-area: Linea2;
     width: 180%;
     height: 5px;
+}
+
+
+#CuartaSeccion {
+    display: grid;
+    grid-template-rows: 74px 146px 544px 170px;
+    grid-template-columns: auto;
+    max-width: 100%;
+    grid-template-areas: "."
+                        "title4"
+                        "body"
+                        "buttonfinal";
+}
+#imgFondo {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 1083px;
+}
+#titulo4 {
+    grid-area: title4;
+}
+.cuadricula {
+    grid-area: body;
+}
+#ultimoBoton {
+    grid-area: buttonfinal;
 }
